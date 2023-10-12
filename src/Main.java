@@ -45,6 +45,10 @@ public class Main {
         System.out.println("Basic operations and variables");
         System.out.print("Very simple control flow and functions");
         System.out.println("Debugging");
+        System.out.println(churchExistence());
+        System.out.println(familyInfo());
+        System.out.println(churchExistence());
+        family();
     }
 
     static String personalInformation() {
@@ -68,5 +72,53 @@ public class Main {
         } else {
             return "TUM is younger than Robert Bosch FOS";
         }
+    }
+
+    static String  churchExistence() {
+        int foundingYearRCCG = 2013;
+        int thisYear = 2023;
+        String founderOfRccgMuc = "Pastor Sam ";
+        String currentPastor = "Pastor Abimbola";
+        int howOldIsRccg = thisYear - foundingYearRCCG;
+        String rccgInfo = "Rccg Munich was founded in the Year " +foundingYearRCCG+ " by " + founderOfRccgMuc + ".\n"
+                +"The church is currently run by a woman called " + currentPastor + ".";
+        String churchAge =  "The church is currently" + howOldIsRccg + "years old.";
+        return rccgInfo + churchAge;
+    }
+
+    static String familyInfo() {
+        String momName = "Sonia";
+        String fatherName = "Efosa";
+        String eldestDaughter = "Gift";
+        String sonName = "Nelson";
+        String middleDaughter = "Victoria";
+        String lastChild = "Mary";
+        String familyName = "Asemota Enabulele";
+        int momAge = 39;
+        int fatherAge = 49;
+        int eldestDaughterAge = 20;
+        int sonAge = 14;
+        int middleChildAge = 12;
+        int familyAge = 8;
+        int totalOfFamilyMembers = 6;
+        String heritage = "Nigeria";
+        int sumOfAge = momAge + fatherAge + eldestDaughterAge + sonAge + middleChildAge + familyAge;
+        String summaryOfAge = "All their Ages together sum the number: " + sumOfAge ;
+        String summaryOfNames = "In the " + familyName + " there are " + totalOfFamilyMembers + " people who are named: "
+                + "\n" + momName + " " + fatherName +  " " + eldestDaughter + " " + sonName + " " +
+                middleDaughter + " " + lastChild + "\nThey are all from " + heritage +"." ;
+
+        return summaryOfNames + "\n" + summaryOfAge;
+
+    }
+
+    static void family(){
+        System.out.println("Gift Enabulele Asemota, 20Years old. ");
+        System.out.println("Nelson Enabulele Asemota, 14 Years old.");
+        System.out.println("Sonia Enabulele, 39 Years old");
+        System.out.println("Victoria Asemota Enabulele, 12 years old");
+        System.out.println("Efosa Asemota, 49Years old");
+        System.out.println("Mary Asemota, 8 Years old");
+
     }
 }
